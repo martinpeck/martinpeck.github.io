@@ -11,11 +11,13 @@ namespace :site do
 
   desc "Clone a shallow copy of the site from github"
   task :clone do
-    `git clone --branch gh-pages --depth 1 git@github.com:#{GITHUB_ORGNAME}/#{GITHUB_REPONAME}.git _site`
+    puts "** cloning"
+    `git clone --branch gh-pages --depth 1 https://github.com/:#{GITHUB_ORGNAME}/#{GITHUB_REPONAME}.git _site`
   end
 
   desc "Fetch the latest version of the site from github"
   task :fetch do
+    puts "** fetching"
     if File.exist?(File.join(SITE_DIR, '.git'))
       `git -C #{SITE_DIR} checkout -- .`
       `git -C #{SITE_DIR} clean -fdx`
@@ -32,12 +34,14 @@ namespace :site do
 
   desc "Generate site using jekyll"
   task :generate => [:fetch] do
+    puts "** generating"
     puts "Building the Jekyll site..."
     Jekyll::Site.new(Jekyll.configuration).process
   end
 
   desc "Generate and publish blog to gh-pages"
   task :publish => [:generate] do
+    puts "** publishing"
     puts "Publishing the site to github pages..."
     message = "Site updated at #{Time.now.utc}"
 
@@ -45,6 +49,6 @@ namespace :site do
     `git -C #{SITE_DIR} add --all`
     `git -C #{SITE_DIR} commit -m #{message.inspect}`
     `git -C #{SITE_DIR} push origin gh-pages`
-    puts "The site is now available at: http://#{GITHUB_ORGNAME}.github.io/#{GITHUB_REPONAME}/"
+    puts "The site is now published"
   end
 end
