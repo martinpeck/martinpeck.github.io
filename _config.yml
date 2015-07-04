@@ -11,3 +11,11 @@ linkedin_username: martinpeck
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: :categories/:title

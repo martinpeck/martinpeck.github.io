@@ -3,7 +3,7 @@ layout: post
 title:  "Initial Commit"
 date:   2015-07-04 00:00:00
 excerpt: I've got a blog now. Here's what I have to say about that.
-permalink: initial-commit
+category: blog
 ---
 
 Finally, after a very long time, I've got off my backside and thrown togther the most basic blog possible. I used to have a blog hosted on MSDN from my Microsoft days. That's been untouched for some time now, but it still has one or two almost-interesting things on it (to me, at least). It's here if you want to see it: [http://blogs.msdn.com/b/mpeck/](http://blogs.msdn.com/b/mpeck/)
