@@ -12,6 +12,8 @@ linkedin_username: martinpeck
 # Build settings
 markdown: kramdown
 
+exclude: [Gemfile, Gemfile.lock, Rakefile]
+
 defaults:
   -
     scope:

@@ -2,7 +2,6 @@ require "bundler/setup"
 require "jekyll"
 require 'yaml'
 
-
 namespace :site do
   # Change your GitHub reponame
   GITHUB_ORGNAME = "martinpeck"
@@ -12,7 +11,7 @@ namespace :site do
   desc "Clone a shallow copy of the site from github"
   task :clone do
     puts "** cloning"
-    `git clone --branch gh-pages --depth 1 https://github.com/:#{GITHUB_ORGNAME}/#{GITHUB_REPONAME}.git _site`
+    `git clone --branch gh-pages --depth 1 https://github.com/#{GITHUB_ORGNAME}/#{GITHUB_REPONAME}.git _site`
   end
 
   desc "Fetch the latest version of the site from github"
