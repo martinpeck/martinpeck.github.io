@@ -44,7 +44,7 @@ This blog is using a slightly modified version of [Hyde][hyde], which is an exce
 I'm using [Jekyll][jekyll] to build the blog.
 
 [codeclub]: https://codeclub.org.uk
-[linkedin]: https://uk.linkedin.com/in/martinpeck
+[linkedin]: https://www.linkedin.com/in/martinpeck
 [blinkbox]: http://blinkbox.com
 [jekyll]: http://jekyllrb.com
 [hyde]:http://hyde.getpoole.com
