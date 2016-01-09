@@ -1,4 +1,5 @@
 # martinpeck.com
+[![Build Status](https://travis-ci.org/martinpeck/martinpeck.com.svg?branch=gh-pages)](https://travis-ci.org/martinpeck/martinpeck.com)
 
 This is the source code for the [martinpeck.com](https://martinpeck.com) blog.
 
