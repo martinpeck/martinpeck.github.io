@@ -1,23 +1,23 @@
+# Dependencies
+markdown:             redcarpet
+highlighter:          pygments
+
 # Site settings
-title: martinpeck.com
+title:                martinpeck.com
+tagline:              'A Jekyll theme'
+description:          'A blog, written by someone called Martin Peck'
+baseurl:              "/"
+url:                  "http://martinpeck.com"
 
-description: > # this means to ignore newlines until "baseurl:"
-  A blog, written by someone called Martin Peck.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://martinpeck.com" # the base hostname & protocol for your site
-twitter_username: martinpeck
-github_username:  martinpeck
-linkedin_username: martinpeck
+author:
+  name:               'Martin Peck'
+  url:                https://twitter.com/martinpeck
 
-# Build settings
-markdown: kramdown
+github:
+  repo:               https://github.com/martinpeck/martinpeck.com
 
-exclude: [Gemfile, Gemfile.lock, Rakefile]
+paginate:             5
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: :categories/:title
+# Other settings
+exclude:              [Gemfile, Gemfile.lock, Rakefile]
+permalink:            none

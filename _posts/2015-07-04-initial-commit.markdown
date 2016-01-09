@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Initial Commit"
+title:  Initial Commit
 date:   2015-07-04 00:00:00
-excerpt: I've got a blog now. Here's what I have to say about that.
 category: blog
 ---
 
