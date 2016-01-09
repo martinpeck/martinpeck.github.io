@@ -15,7 +15,7 @@ There's plently for me to do here. I need to apply some styles, get some analyti
 
 ... I'l let you know how that goes.
 
-[jekyll]:(http://jekyllrb.com/)
+[jekyll]:http://jekyllrb.com/
 
 
 

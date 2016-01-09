@@ -42,4 +42,4 @@ It's a pretty dumb script at present, taking no account of labels that already e
 
 If you see a problem with the script, or have any suggestions for how it could be improved, then add something to the [list of issues][list_of_issues]...and feel free to apply one of my labels to it.
 
-[list_of_issues]:(https://github.com/martinpeck/gh-issue-label-generator/issues)
+[list_of_issues]:https://github.com/martinpeck/gh-issue-label-generator/issues
