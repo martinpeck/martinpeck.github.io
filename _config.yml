@@ -19,5 +19,5 @@ github:
 paginate:             5
 
 # Other settings
-exclude:              [Gemfile, Gemfile.lock, Rakefile]
+exclude:              [Gemfile, Gemfile.lock, Rakefile, vendor]
 permalink:            none
