@@ -19,11 +19,6 @@ github:
 paginate:             5
 
 # Other settings
-exclude:              - README.md
-                      - Gemfile
-                      - Gemfile.lock
-                      - Rakefile
-                      - vendor
-                      - .travis.yml
+exclude:              [README.md,Gemfile,Gemfile.lock,Rakefile,vendor,.travis.yml]
 
 permalink:            none
