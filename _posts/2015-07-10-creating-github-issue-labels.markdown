@@ -38,8 +38,8 @@ The script then does all the hard work for me.
 
 It's a pretty dumb script at present, taking no account of labels that already exist - it'll fail to create the label if it already exists, and goes on to the next one. It will also leave any other labels alone. I may get around to changing some of these things...but don't hold your breath.
 
-# Feedback
+## Feedback
 
-If you see a problem with the script, or have any suggestions for how it could be improved, then add something to the [list of issues][list_of_issues]...and feel free to apply one of my labels to it.
+If you see a problem with the script, or have any suggestions for how it could be improved, then add something to the [issues on GitHub.com][list_of_issues].
 
 [list_of_issues]:https://github.com/martinpeck/gh-issue-label-generator/issues
