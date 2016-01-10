@@ -4,7 +4,6 @@ highlighter:          pygments
 
 # Site settings
 title:                martinpeck.com
-tagline:              'A Jekyll theme'
 description:          'A blog, written by someone called Martin Peck'
 baseurl:              "/"
 url:                  "http://martinpeck.com"
