@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Example content
+visibility: hidden
+
 ---
 
 <div class="message">
