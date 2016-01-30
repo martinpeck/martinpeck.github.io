@@ -26,7 +26,7 @@ I then explained that, once the game was working, I went back and make it look b
 
 ![Final Scratch Game](/images/viking-scratch-final.png)
 
-You can see this project here: [https://scratch.mit.edu/projects/95721352/#player](https://scratch.mit.edu/projects/95911754/#player)
+You can see this project here: [https://scratch.mit.edu/projects/95721352/#player](https://scratch.mit.edu/projects/95721352/#player)
 
 My hope, in all of this, was that by showing them this progression...
 
