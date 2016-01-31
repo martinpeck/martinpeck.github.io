@@ -3,45 +3,37 @@ layout: page
 title: About Me
 ---
 
-Hi. I'm Martin Peck. I've spent the last 20+ years getting paid for writing software, helping other people write software, or preventing people from writing the wrong software. When I'm not doing that I'm generally doing whatever my family tell me to do.
+Hi. I'm Martin Peck. I've spent the last 20+ years getting paid for writing software and leading teams of software developers. When I'm not doing, that I'm generally doing whatever my family tell me to do.
 
 ## Code Club
+I'm currently the Director of Engineering for a fantastic not-for-profit called [Code Club][codeclub] . Code Club's mission is to help kids learn about writing code and to get them excited about technology in general. Volunteers help run after school clubs across the UK. I happen to be one of those volunteers, running a club in a local school.
 
-[codeclub.org.uk][codeclub]
-
-I'm currently the Director of Engineering for a fantastic not-for-profit called [Code Club][codeclub] . Code Club's mission is to get kids enthusiastic about programming and technology in general by setting up and supporting a network of after school clubs. It's aimed at 9 to 11 year olds and it's a fantstic cause.
-
-**Get involved!** It's easy, fun and incredibly rewarding. I run my own Code Club at a local school and it's one of the highlights of my week.
+[**Get involved!**][codeclub] It's easy, fun and incredibly rewarding. I run my own Code Club at a local school and it's one of the highlights of my week.
 
 ## blinkbox Movies and blinkbox Books
+I have worked for blinkbox (previously part of Tescos) within the blinkbox Movies team and blinkbox Books team.
 
-[blinkbox.com][blinkbox]
+Within [blinkbox Movies][blinkbox] I was the Head of Client Device Development. In this role I was responsible for the development of the client apps that blinkbox owned (website, mobile apps, games console and set-top boxes).
 
-I used to work for blinkbox (previously owned by Tesco, before they decided to sell it off) where I was the Head of Client Device Development for the Movies team (basically, responsible for the development of all the UIs that blinkbox shipped, across all devices) and then went on to be Director of Engineering for blinkbox Books.
+In the blinkbox Books team I was Director of Engineering, and helped build an engineering team and launch a brand new eBook service.
 
-Sadly, the books team was disbanded when Tesco decided to sell off the blinkbox companies. The Movies team lives on and is now part of TalkTalk.
-
-blinkbox was full of excellent people, and I loved working there.
+Sadly, Tesco sold blinkbox at the start of 2015. blinkbox was full of excellent people, and I loved working there.
 
 ## Microsoft
+I worked for Microsoft, in the UK, for just over 10 years. During that time I worked on a number of projects, but for the last 5 of those years I worked within Microsoft Mediaroom. I headed up a remote dev team in the UK that was part of the San Francisco based product group.
 
-I worked for Microsoft, in the UK, for just over 10 years. During that time I worked on a number of projects, but for the last 5 of those years I worked within Microsoft TV. I headed up a remote dev team in the UK th was part of a Mountain View based product group. The product that we shipped was an IPTV platform which is currently used around the world by many Telecoms companies. Microsoft TV is now called Mediaroom, and is part of Ericcson.
+We shipped an IPTV platform that's used around the world by many Telecoms companies.
 
 ## Other Stuff
 If you want to know more then I suggest you look at my [LinkedIn profile](https://www.linkedin.com/in/martinpeck){:data-proofer-ignore=""}.
 
 ## Health Warning about Everything on this Site
-Nothing you read on this blog, or anything that I write on social media, is written on behalf of the organisations I have previously or currently work for. It should not be considered  an expression of their views, or endorsed by them.
+Nothing you read on this blog, or anything that I write on social media, is written on behalf of the organisations I have previously or currently work for. None of what you read should be considered an expression of their views, or endorsed by them.
 
 At times, some of it won't even be stuff that I agree with.
 
-Deal with it.
-
 ### Acknowledgements
-
-This blog is using a slightly modified version of [Hyde][hyde], which is an excellent Jekyll theme
-
-I'm using [Jekyll][jekyll] to build the blog.
+This blog is using a  modified version of [Hyde][hyde], which is an excellent Jekyll theme I'm using [Jekyll][jekyll] to build the blog, and hosting on Github.com. [Feel free to take a look](https://github.com/martinpeck/martinpeck.com).
 
 [codeclub]: https://codeclub.org.uk
 [blinkbox]: http://blinkbox.com
