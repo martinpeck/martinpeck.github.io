@@ -83,6 +83,9 @@ html {
   font-size: 1.75rem;
 }
 
+.sidebar-copyright {
+  font-size:14px;
+}
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
