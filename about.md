@@ -5,6 +5,13 @@ title: About Me
 
 Hi. I'm Martin Peck. I've spent the last 20+ years getting paid for writing software and leading teams of software developers. When I'm not doing, that I'm generally doing whatever my family tell me to do.
 
+You can find in these other places:
+
+- [GitHub.com](https://github.com/martinpeck)
+- [Stack Overflow](https://stackoverflow.com/users/74243/martin-peck)
+- [LinkedIn](https://www.linkedin.com/in/martinpeck){:data-proofer-ignore=""}
+- [Twitter](https://twitter.com/martinpeck)
+
 ## Code Club
 I'm currently the Director of Engineering for a fantastic not-for-profit called [Code Club][codeclub] . Code Club's mission is to help kids learn about writing code and to get them excited about technology in general. Volunteers help run after school clubs across the UK. I happen to be one of those volunteers, running a club in a local school.
 
@@ -23,9 +30,6 @@ Sadly, Tesco sold blinkbox at the start of 2015. blinkbox was full of excellent 
 I worked for Microsoft, in the UK, for just over 10 years. During that time I worked on a number of projects, but for the last 5 of those years I worked within Microsoft Mediaroom. I headed up a remote dev team in the UK that was part of the San Francisco based product group.
 
 We shipped an IPTV platform that's used around the world by many Telecoms companies.
-
-## Other Stuff
-If you want to know more then I suggest you look at my [LinkedIn profile](https://www.linkedin.com/in/martinpeck){:data-proofer-ignore=""}.
 
 ## Health Warning about Everything on this Site
 Nothing you read on this blog, or anything that I write on social media, is written on behalf of the organisations I have previously or currently work for. None of what you read should be considered an expression of their views, or endorsed by them.
