@@ -4,7 +4,6 @@ gems:                 [jekyll-paginate, jekyll-gist]
 # Site settings
 title:                martinpeck.com
 description:          'A blog, written by someone called Martin Peck'
-baseurl:              "/"
 url:                  "http://martinpeck.com"
 
 author:
