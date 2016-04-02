@@ -6,13 +6,13 @@ excerpt: I got fed up with Bitly and wrote something of my own.
 category: blog
 ---
 
-I recently got frustrated with [Bitly](http://bit.ly) as a url shorter and decided to write my own simple alternative.
+I recently got frustrated with [Bitly](http://bit.ly){:target="_blank"} as a url shorter and decided to write my own simple alternative.
 
 The result is a very small (and prety dumb) Python web app that will allow short url to be redirected to other (longer) urls, and will capture some stats about how often those links are being used.
 
-That web app is called [plinky](https://github.com/martinpeck/plinky), and you can find the source code on GitHub.com:
+That web app is called [plinky](https://github.com/martinpeck/plinky){:target="_blank"}, and you can find the source code on GitHub.com:
 
-[https://github.com/martinpeck/plinky](https://github.com/martinpeck/plinky)
+[https://github.com/martinpeck/plinky](https://github.com/martinpeck/plinky){:target="_blank"}
 
 ## The Problem with Bitly
 
@@ -30,7 +30,7 @@ If you want, you can then customize your short links to make the hash easier to 
 
 For example, I've customized the previous short link to be:
 
-> http://bit.ly/martinpeck.
+> http://bit.ly/martinpeck
 
 So, with a custom domain, you are essentially replacing the `bit.ly` domain with your own.
 
@@ -52,9 +52,9 @@ Now...I've not written anything nearly as complicated or feature rich as Bitly. 
 4. track all such requests
 5. respond with a default redirect if the lookup fails
 
-Plinky is written in Python, and uses the [flask](http://flask.pocoo.org/) micro-framework. I picked flask because I'd not really played much with flask. I've used Sinatra (with Ruby), but hadn't tried flask. Plinky is hardly the most complicated example of a flask app, but I certainly found it simple to set up and get working.
+Plinky is written in Python, and uses the [flask](http://flask.pocoo.org/){:target="_blank"} micro-framework. I picked flask because I'd not really played much with flask. I've used Sinatra (with Ruby), but hadn't tried flask. Plinky is hardly the most complicated example of a flask app, but I certainly found it simple to set up and get working.
 
-At the heart of Plinky is a YAML file that contains a list of hashes with the intended destinations. If you look at the [example YAML file in Github](https://github.com/martinpeck/plinky/blob/master/shorturls/example_shorturls.yaml) you'll see it looks like this...
+At the heart of Plinky is a YAML file that contains a list of hashes with the intended destinations. If you look at the [example YAML file in Github](https://github.com/martinpeck/plinky/blob/master/shorturls/example_shorturls.yaml){:target="_blank"} you'll see it looks like this...
 
 {% highlight yaml %}
 # default, if other shorturls can't be found
@@ -81,7 +81,7 @@ def redirect_to_short_url(shorturl=""):
 
 This route tracks the redirect event using some code in `tracking.py` and then performs the HTTP 301 redirect using some code in `shortcuts.py`
 
-Plinky uses [Segment](https://segment.com/) to track how many times a given hash is used for redirect. This is optional, and controlled by the existance of an environemnt variable holding the key that Segment requires.
+Plinky uses [Segment](https://segment.com/){:target="_blank"} to track how many times a given hash is used for redirect. This is optional, and controlled by the existance of an environemnt variable holding the key that Segment requires.
 
 Segment is a service that takes events and then hands them off to 1 or more other analytics services. So, you can send a single event to Segment and have Segment issue an analytics event to Google Analytics, MixPanel or a whole host of other analytics endpoints. This makes it super easy to add and replace the services you use for analytics.
 
@@ -105,5 +105,5 @@ Again, I'm sure there are better ways to do this, but this one got me and my tea
 
 ## TODO
 
-There are some things I want to improve with Plinky. For example, I want to add some stats and info pages to the service so that it's easier to see how the short urls are set up. If you have any suggestions, or see any problems, please log an issue in the [GitHub Issues database for this project](https://github.com/martinpeck/plinky/issues).
+There are some things I want to improve with Plinky. For example, I want to add some stats and info pages to the service so that it's easier to see how the short urls are set up. If you have any suggestions, or see any problems, please log an issue in the [GitHub Issues database for this project](https://github.com/martinpeck/plinky/issues){:target="_blank"}.
 
