@@ -19,3 +19,21 @@ Many of the keyboard shortcuts that I use in Sublime Text work in Code too, so I
 I'm going to see how it does with Ruby and Python development, and will report back. 
 
 For now, though, I'm pleasantly surprised.
+
+Oh, and if you want to know how I got my jekyll build to work, here's what I did...
+
+- using VS Code, type Cmd+Shift+P to get access to the command list
+- type "task" and select the option to configure the task runner
+- you will be given some options. Select the one for a custom task.
+- VS code will create a file `.vscode/tasks.json`
+- Set up the task you want to run here. Mine looks like this...
+
+{% highlight json %}
+{
+  "version": "0.1.0",
+  "command": "jekyll",
+  "isShellCommand": true,
+  "args": ["serve"],
+  "showOutput": "always"
+}
+{% endhighlight %}
