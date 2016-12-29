@@ -1,6 +1,6 @@
 ---
 layout: page
-title: iMessage Stickers!
+title: Stickers
 ---
 
 One of my hobbies is drawing, and recently I've been using my drawing skills to create a number of iMessage sticker packs!
