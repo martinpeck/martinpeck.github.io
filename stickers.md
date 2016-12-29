@@ -7,3 +7,5 @@ One of my hobbies is drawing, and recently I've been using my drawing skills to 
 
 You can find them on the App Store!
 
+![Grumpy Xmas Stickers](/images/store-iphone-2.png)
+
