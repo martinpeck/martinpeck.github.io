@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Google Developer Meetup"
-date:   2016-04-02 00:00:00
+date:   2018-06-22 00:00:00
 excerpt: An evening of TensorFlow
 category: blog
 ---
