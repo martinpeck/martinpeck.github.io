@@ -12,8 +12,12 @@ You can find in these other places:
 - [LinkedIn](https://www.linkedin.com/in/martinpeck){:data-proofer-ignore=""}
 - [Twitter](https://twitter.com/martinpeck)
 
+## Microsoft (again)
+
+I'm currently a Software Engineering Manager at Microsoft, within the Commercial Software Engineering (CSE) team. I manage a small team of Software Engineers, and focus on "compute" things, such as serverless, containers, and Kubenetes. I get to contribute to OSS software, and I don't have a Windows machine. I <3 the new Microsoft!
+
 ## Code Club
-I'm currently the Director of Engineering for a fantastic not-for-profit called [Code Club][codeclub] . Code Club's mission is to help kids learn about writing code and to get them excited about technology in general. Volunteers help run after school clubs across the UK. I happen to be one of those volunteers, running a club in a local school.
+I was previously the Director of Engineering for a fantastic not-for-profit called [Code Club][codeclub] . Code Club's mission is to help kids learn about writing code and to get them excited about technology in general. Volunteers help run after school clubs across the UK. I happen to be one of those volunteers, running a club in a local school.
 
 [**Get involved!**][codeclub] It's easy, fun and incredibly rewarding. I run my own Code Club at a local school and it's one of the highlights of my week.
 
