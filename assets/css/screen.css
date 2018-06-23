@@ -231,6 +231,10 @@ License: https://www.wowthemes.net/freebies-license/
      margin-right:5px;
 }
 
+.mainheading .lead {
+    font-size:0.9rem;
+}
+
  .mainheading h1.posttitle {
      font-weight:700;
      margin-bottom:1rem;
