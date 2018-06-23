@@ -5,6 +5,7 @@ author: mpeck
 categories: [ blog ]
 featured: true
 hidden: true
+image: images/tensorflow.jpg
 
 ---
 
