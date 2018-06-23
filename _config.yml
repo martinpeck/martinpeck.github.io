@@ -2,7 +2,7 @@
 name: "martinpeck.com"
 description: "A blog, written by someone called Martin Peck"
 meta_description: "A blog, written by someone called Martin Peck."
-logo: 'public/icons/apple-icon.png'
+logo: 'assets/icons/apple-icon.png'
 baseurl:
 google_analytics: 'UA-67509161-1'
 disqus: martinpeck-com
