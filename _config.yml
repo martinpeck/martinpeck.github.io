@@ -1,5 +1,6 @@
 # Site
 name: "martinpeck.com"
+copyright_name: Martin Peck
 description: "A blog, written by someone called Martin Peck"
 meta_description: "A blog, written by someone called Martin Peck."
 logo: 'assets/icons/apple-icon.png'
