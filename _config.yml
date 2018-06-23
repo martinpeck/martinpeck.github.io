@@ -6,6 +6,7 @@ logo: 'assets/icons/apple-icon.png'
 baseurl:
 google_analytics: 'UA-67509161-1'
 disqus: martinpeck-com
+permalink: pretty
 
 # Authors
 authors:
