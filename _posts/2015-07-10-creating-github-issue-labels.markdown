@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Creating Github Issue Labels"
-date:   2015-07-10 15:00:00
-excerpt: I wrote a simple python script for creating GitHub labels. You're welcome.
-category: blog
+author: mpeck
+categories: [ blog ]
+
 ---
 
 If you use GitHub Issues for tracking work and bugs, then you probably also use labels for categorizing or highlighting those issues. You might also use labels for applying some sort of workflow, such as highlighting which issues are ready to be worked on, in progress, or blocked.

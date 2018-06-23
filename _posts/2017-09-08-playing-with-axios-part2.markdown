@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Playing with axios (and Vue.js) - Part 2
-date:   2017-09-07 12:00:00
-excerpt: A quick post related to axios and vue (part 2)
-category: blog
+author: mpeck
+categories: [ blog ]
+
 ---
 
 *If you want to read Part 1, you'll [find it here][part1]*
@@ -21,13 +21,13 @@ The app allows you to enter the ID of a Pokemon, and it then retrieves some basi
 I'm really impressed with [Vue.js]. I've recently been getting my head around React, and so this detour into [Vue.js] has come at a point where I'm still learning React. What's striking is how quick it is to get up and running with [Vue.js]. My app does hardly anything, but I was able to create a component-based app, with basic routing, in no time at all. I'm going to go back to my React tutorials soon, but I've really enjoyed being productive with [Vue.js].
 
 ## Surge vs GH-Pages
-At first, I was going to deploy this app to GitHub pages. I'd found an npm package that helped with this, but I ran up against a couple of issues. 
+At first, I was going to deploy this app to GitHub pages. I'd found an npm package that helped with this, but I ran up against a couple of issues.
 
 While trying get things working I read a post that recommended [Surge.sh], so I gave that a go. It is **SO EASY** to deploy to Surge, and so I ripped out the GH pages deployment and will be using [Surge.sh] for all of my future HTML/JS web apps.
 
 ## Conclusion
 
-In the end, the use of [axios] in the app was pretty trivial. The learning curve required to get up and running with [axios] and [Vue.js] was very shallow, and I felt productive with both in a short amount of time. I'll be playing with both of these in the future. 
+In the end, the use of [axios] in the app was pretty trivial. The learning curve required to get up and running with [axios] and [Vue.js] was very shallow, and I felt productive with both in a short amount of time. I'll be playing with both of these in the future.
 
 
 [part1]: {{ site.baseurl }}{% post_url 2017-09-06-playing-with-axios-part1 %}

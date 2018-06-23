@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  First things First
-date:   2016-01-29 00:00:00
-excerpt: An approach to keeping the kids at my Code Club focused on what's important
-category: blog
+author: mpeck
+categories: [ blog ]
+
 ---
 
 One of the things I find, when [volunteering at the school where I run a Code Club]({% post_url 2016-01-23-volunteering-for-code-club %}), is that the kids always want to spend lots of time drawing backgrounds for their [Scratch](https://scratch.mit.edu) games, or creating awesome sprites. Sometimes they spend more time doing this than actually writing code.

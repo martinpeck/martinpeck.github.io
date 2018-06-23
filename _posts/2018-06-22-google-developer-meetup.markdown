@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Google Developer Meetup"
-date:   2018-06-22 00:00:00
-excerpt: An evening of TensorFlow
-category: blog
+author: mpeck
+categories: [ blog ]
+featured: true
+hidden: true
+
 ---
 
 Last night I attended the [Google Developer Group Reading & Thames Valley](https://www.meetup.com/GDG-Reading-Thames-Valley/) meetup. I don't attend as often as I'd like, but this is a really nice meetup that often has interesting technical presentations.

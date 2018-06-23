@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "plinky - A bit like Bitly"
-date:   2016-04-02 00:00:00
-excerpt: I got fed up with Bitly and wrote something of my own.
-category: blog
+author: mpeck
+categories: [ blog ]
+
 ---
 
 I recently got frustrated with [Bitly](http://bit.ly){:target="_blank"} as a url shorter and decided to write my own simple alternative.

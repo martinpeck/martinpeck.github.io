@@ -1,21 +1,41 @@
-# Dependencies
-markdown:             kramdown
-plugins:              [jekyll-paginate, jekyll-gist]
-# Site settings
-title:                martinpeck.com
-description:          'A blog, written by someone called Martin Peck'
-url:                  "http://martinpeck.com"
+# Site
+name: "martinpeck.com"
+description: "A blog, written by someone called Martin Peck"
+meta_description: "A blog, written by someone called Martin Peck."
+logo: 'public/icons/apple-icon.png'
+baseurl:
+google_analytics: 'UA-67509161-1'
+disqus: martinpeck-com
 
-author:
-  name:               'Martin Peck'
-  url:                https://twitter.com/martinpeck
+# Authors
+authors:
+  mpeck:
+    name: Martin
+    display_name: Martin Peck
+    gravatar: e7abf15c907e020b93f8be6f5f2ae672
+    email: martinjohnpeck@gmail.com
+    web: https://martinpeck.com
+    twitter: https://twitter.com/martinpeck
+    description: "I write code, and manage people who write code."
 
-github:
-  repo:               https://github.com/martinpeck/martinpeck.com
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-gist
 
-paginate:             5
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
 
-# Other settings
-exclude:              [README.md,Gemfile,Gemfile.lock,Rakefile,vendor,.travis.yml]
+# Pagination
+paginate: 6
+paginate_path: /page:num/
 
-permalink:            pretty
+# Other
+markdown: kramdown
+highlighter: rouge

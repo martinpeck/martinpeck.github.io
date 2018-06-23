@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  A Week Playing with Vue.js
-date:   2017-09-16 12:00:00
-excerpt: A round-up of a week playing with Vue.js
-category: blog
+author: mpeck
+categories: [ blog ]
+
 ---
 
 I've spent the last week playing with [Vue.js] and associated modules. I have to say...I'm impressed with how quickly and easily I've been able to throw together some little web apps.
@@ -23,7 +23,7 @@ The app makes use of [axios] to make API calls to a Pokemon API, and Vue.js to r
 
 ## Vuex-Notes-App: *a Notes app that uses Vuex for state management*
 
-I started following a tutorial to build a notes app in Vue.js that used Vuex (the flux library build for Vue.js) and quickly realised it was written for Vue/Vuex version 1.x. I decided to keep going, using the basic structure of the app, but to write it 
+I started following a tutorial to build a notes app in Vue.js that used Vuex (the flux library build for Vue.js) and quickly realised it was written for Vue/Vuex version 1.x. I decided to keep going, using the basic structure of the app, but to write it
 in the latest versions of Vue/Vuex.
 
 - the code: <https://github.com/martinpeck/vuex-notes-app>
@@ -33,7 +33,7 @@ in the latest versions of Vue/Vuex.
 
 ## Vigenere-App: *encode and decode text usign the Vigenere Cipher*
 
-This app allows you to encode and decode text using the Vignere Cipher (a series of Ceaser ciphers). I build this app after a conversation with my daugher about a book she's reading. 
+This app allows you to encode and decode text using the Vignere Cipher (a series of Ceaser ciphers). I build this app after a conversation with my daugher about a book she's reading.
 
 - The code: <https://github.com/martinpeck/vigenere-cipher-app-app>
 - The app: <https://vigenere-app.surge.sh>
@@ -41,7 +41,7 @@ This app allows you to encode and decode text using the Vignere Cipher (a series
 ![Vigenere App](/images/vue-apps/vigenere-app.gif)
 
 ## Conclusion
-I've particularly enjoyed using Vue.js...a joy that I've yet to experience with React. It's been easy to get my head around, and has allowed me to get on and build things. If you've not had a chance to play with Vue.js yet, I'd recommend giving it a go. 
+I've particularly enjoyed using Vue.js...a joy that I've yet to experience with React. It's been easy to get my head around, and has allowed me to get on and build things. If you've not had a chance to play with Vue.js yet, I'd recommend giving it a go.
 
 Other things I've discovered this week include:
 

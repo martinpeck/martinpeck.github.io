@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  I'm Loving Jupyter Notebooks
-date:   2017-04-04 00:00:00
-excerpt: I've become a Jupyter Notebooks convert. Find out why.
-category: blog
+author: mpeck
+categories: [ blog ]
+
 ---
 
 I've become a big fan of the programming language Python, and have been using a number of tools to play around with the language. I'm also helping my son learn Python, and walking him through various coding illustrations.

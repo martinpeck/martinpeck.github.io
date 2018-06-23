@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Volunteering for Code Club
-date:   2016-01-23 00:00:00
-excerpt: I've been volunteering for Code Club since April 2013. Here's why I started, and what I get out of it.
-category: blog
+author: mpeck
+categories: [ blog ]
+
 ---
 
 I joined [Code Club](https://codeclub.org.uk) in Jan 2015 to head up their engineering team. However, way before this I was already voluneering for Code Club.
