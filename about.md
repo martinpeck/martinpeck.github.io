@@ -16,7 +16,7 @@ You can find in these other places:
 
 ## Microsoft (again)
 
-I'm currently a Software Engineering Manager at Microsoft, within the Commercial Software Engineering (CSE) team. I manage a small team of Software Engineers, and focus on "compute" things, such as serverless, containers, and Kubenetes. I get to contribute to OSS software, and I don't have a Windows machine. I <3 the new Microsoft!
+I've returned to Microsoft, and I'm currently a Software Engineering Manager at Microsoft, within the Commercial Software Engineering (CSE) team. I manage a small team of Software Engineers, and focus on "compute" things, such as serverless, containers, and Kubenetes. I get to contribute to OSS software, and I don't have a Windows machine. I <3 the new Microsoft!
 
 ## Code Club
 I was previously the Director of Engineering for a fantastic not-for-profit called [Code Club][codeclub] . Code Club's mission is to help kids learn about writing code and to get them excited about technology in general. Volunteers help run after school clubs across the UK. I happen to be one of those volunteers, running a club in a local school.
@@ -43,11 +43,13 @@ Nothing you read on this blog, or anything that I write on social media, is writ
 At times, some of it won't even be stuff that I agree with.
 
 ### Acknowledgements
-This blog is using a  modified version of [Hyde][hyde], which is an excellent Jekyll theme I'm using [Jekyll][jekyll] to build the blog, and hosting on Github.com. [Feel free to take a look](https://github.com/martinpeck/martinpeck.com).
+This blog is using a modified version of [Mediumish][mediumish], which is an excellent Jekyll theme. I'm using [Jekyll][jekyll] to build the blog, and hosting on Github.com. [Feel free to take a look](https://github.com/martinpeck/martinpeck.com).
 
 [codeclub]: https://codeclub.org.uk
 [blinkbox]: http://blinkbox.com
 [jekyll]: http://jekyllrb.com
-[hyde]:http://hyde.getpoole.com
+[mediumish]: https://github.com/wowthemesnet/mediumish-theme-jekyll
+
+
 
 
