@@ -5,7 +5,7 @@ This is the source code for the [martinpeck.com](https://martinpeck.com) blog.
 
 ## Acknowledgements
 
-This blog uses [Hyde](https://github.com/poole/hyde) for its theme, and is built using [Jekyll](http://jekyllrb.com).
+This blog uses a modified version of [Mediumish](https://github.com/wowthemesnet/mediumish-theme-jekyll) for its theme, and is built using [Jekyll](http://jekyllrb.com).
 
 ## License
 
