@@ -3,6 +3,7 @@ layout: post
 title:  I'm Loving Jupyter Notebooks
 author: mpeck
 categories: [ blog ]
+excerpt: I've become a Jupyter Notebooks convert. Find out why.
 
 ---
 

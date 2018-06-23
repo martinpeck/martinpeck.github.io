@@ -3,6 +3,7 @@ layout: post
 title:  Visual Studio Code - First Impressions
 author: mpeck
 categories: [ blog ]
+excerpt: Can VS Code tear me away from Sublime Text? Maybe.
 
 ---
 

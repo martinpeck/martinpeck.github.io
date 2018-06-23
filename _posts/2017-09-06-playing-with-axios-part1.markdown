@@ -3,6 +3,7 @@ layout: post
 title:  Playing with axios - Part 1
 author: mpeck
 categories: [ blog ]
+excerpt: A quick post related to axios, a javascript library for async http requests
 
 ---
 

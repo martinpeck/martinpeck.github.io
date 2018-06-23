@@ -3,6 +3,7 @@ layout: post
 title:  Playing with axios (and Vue.js) - Part 2
 author: mpeck
 categories: [ blog ]
+excerpt: A quick post related to axios and Vue.js (part 2)
 
 ---
 

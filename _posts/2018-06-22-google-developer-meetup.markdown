@@ -6,6 +6,7 @@ categories: [ blog ]
 featured: true
 hidden: true
 image: images/tensorflow.jpg
+excerpt: An evening of Tensorflow at the Google Developer Group, Reading, presented by Laurence Moroney. This post is my (short) write-up of this meetup.
 
 ---
 

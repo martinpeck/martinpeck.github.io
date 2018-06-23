@@ -3,6 +3,7 @@ layout: post
 title:  A Week Playing with Vue.js
 author: mpeck
 categories: [ blog ]
+excerpt: A round-up of my week playing with Vue.js, building some basic websites.
 
 ---
 

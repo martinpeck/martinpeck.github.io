@@ -3,6 +3,7 @@ layout: post
 title:  "plinky - A bit like Bitly"
 author: mpeck
 categories: [ blog ]
+excerpt: I got fed up with Bitly and wrote something of my own.
 
 ---
 

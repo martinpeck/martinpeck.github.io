@@ -3,6 +3,7 @@ layout: post
 title:  Volunteering for Code Club
 author: mpeck
 categories: [ blog ]
+excerpt: I've been volunteering for Code Club since April 2013. Here's why I started, and what I get out of it.
 
 ---
 

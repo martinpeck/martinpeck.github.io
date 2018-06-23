@@ -3,6 +3,7 @@ layout: post
 title:  Initial Commit
 author: mpeck
 categories: [ blog ]
+excerpt: My first post to this blog. You should totally read it.
 
 ---
 

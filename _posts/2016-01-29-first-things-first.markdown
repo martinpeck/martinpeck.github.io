@@ -3,6 +3,7 @@ layout: post
 title:  First things First
 author: mpeck
 categories: [ blog ]
+excerpt: An approach to keeping the kids at my Code Club focused on what's important
 
 ---
 

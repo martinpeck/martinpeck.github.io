@@ -3,6 +3,7 @@ layout: post
 title:  "Creating Github Issue Labels"
 author: mpeck
 categories: [ blog ]
+excerpt: I wrote a simple python script for creating GitHub labels. You're welcome!
 
 ---
 
