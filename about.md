@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About Me
+categories: [ about ]
+
 ---
 
 Hi. I'm Martin Peck. I've spent the last 20+ years getting paid for writing software and leading teams of software developers. When I'm not doing that I'm generally doing whatever my family tell me to do.
