@@ -1,3 +1,11 @@
+---
+layout: post
+title:  Creating Stickers for Apple Messenger
+author: martin
+categories: [ Jekyll, tutorial, blog ]
+
+---
+
 I enjoy drawing cartoon characters, and my recent purchase of an iPad Pro with Apple Pencil meant that I spent a good deal of time over the Christmas break drawing.
 
 At the same time, my kids have started using their iPhones and, in particular, the Messages app (iMessage) to send me texts, photos and to play turn-based games.
