@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Stop Skype for Business (on MacOS) from making a Login Noise"
+title:  "Stop Skype for Business (on MacOS) from Playing a Login Sound"
 date:   2018-06-26 00:00:00
 excerpt: How I stopped Skype for Business, on my Mac, from playing that really annoying "whoosh" sounds when it starts up.
 author: mpeck
