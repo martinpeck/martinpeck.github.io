@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using iTerm2 'Alert on Next Mark' When Deploying ARM Templates"
+title:  "Using iTerm2's Alert on Next Mark for Long Running commands"
 excerpt: I'd been using iTerm2 for some time, but I've just stumbled across the alerting feature and now use every time I deploy an ARM template for Azure.
 author: mpeck
 category: [blog]
@@ -9,13 +9,14 @@ category: [blog]
 
 This isn't particularly novel, and if I'd RTFM'd the [iTerm2][iterm2] docs I'd know about this already, but I've just stumbled across a cool feature of [iTerm2][iterm2] and I thought I'd share it.
 
-When you kick off a long running process from a terminal window, it's common to then switch to another application while the process runs. What's even more common is to then forget about that terminal window because (for example) you've started to read the entire [XKCD archive][archive].
+When you kick off a long running process from a terminal window, it's common to then switch to another application while the process runs (in my case, when I'm deploying a number of resources to Azure using an [ARM template][arm-template]). What's even more common is to then forget about that terminal window because (for example) you've started to read the entire [XKCD archive][archive].
 
-Recently, while [deploying ARM templates][arm-template], I read [a tweet by @LawrenceGripper][tweet] that suggested...
+Recently, I read [a tweet by @LawrenceGripper][tweet]...
 
-> Optimization: When running a long running bash script use `longthing && notify-send bash "I'm done"` so you can browse/email but get notified when it's done (tested on ubuntu 18)
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Optimization: When running a long running bash script use `longthing &amp;&amp; notify-send bash &quot;I&#39;m done&quot;` so you can browse/email but get notified when it&#39;s done (tested on ubuntu 18)</p>&mdash; Lawrence Gripper (@lawrencegripper) <a href="https://twitter.com/lawrencegripper/status/1013801227996598272?ref_src=twsrc%5Etfw">July 2, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Given I spend most of my terminal-time within [iTerm2][iterm2] on my Mac I wondered if there was something more "MacOS friendly" that I could do that would give me a similar experience. **It turns out there is!**
+Given I spend most of my terminal-time within [iTerm2][iterm2] on my Mac, this tweet made me wondered if there was something I could do within iTerm 2 that would give me a similar experience. **It turns out there is!**
 
 iTerm2 has a feature called Alert on Next Mark, which is mentione in their online docs for :
 
