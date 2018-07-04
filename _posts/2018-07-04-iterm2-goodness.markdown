@@ -32,6 +32,8 @@ Now, you can go back to reading the internet while your long running task contin
 
 This alert isn't very descriptive, but it's enough to wake me up from my slumber and get my attention.
 
+One nice aspect of this feature is that you can set up an alert *after* you've run the command. So, if you were expecting something to complete quickly, but it's taking forever, hit **⌥⌘A**, go look at cat gifs, and wait for the alert.
+
 HTH!
 
 [iterm2]: https://www.iterm2.com/
