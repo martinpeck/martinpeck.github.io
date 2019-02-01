@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Building and Deploying Jekyll Sites using VSTS Build Pipelines
+title:  Building and Deploying Jekyll Sites using Docker
 author: martin
 categories: [ Jekyll, tutorial, blog ]
 image: images/jekyll-vsts/main-image.png
@@ -8,51 +8,80 @@ featured: true
 
 ---
 
-I'm a big fan of [Jekyll][jekyll] when it comes to static sites, such as blogs, documentation etc. This post describes how I've set up a [VSTS][vsts] Build Pipeline to build and deploy a static Jekyll site using Docker images to do the actual build steps.
+I'm a big fan of [Jekyll][jekyll] when it comes to static sites, such as blogs, documentation etc.
+
+This post describes how I'm using [Docker][docker] to make local Jekyll site development easier, and to make CI builds of Jekyll sites in [Travis CI][travis] or [Azure DevOps][devops] easier to set up.
 
 ## The Problem
 
-This blog is a Jekyll site, [hosted on GitHub][martinpeck] as a [GitHub Pages site][githubpages].
+This blog is a static site build with [Jekyll][jekyll], and then [hosted on GitHub][martinpeck] as a [GitHub Pages site][githubpages]. When I commit changes to Github, [Travis CI][travis] builds the site to check for any issues.
 
-However, Jekyll requires you to have a Ruby environment in order to run and build your web site, and this can sometimes be a pain to set up and maintain.
+I also use Jekyll at work, to build documentation sites. In general, the markdown for these sites is hosted in [Azure DevOps][devops], and the sites are hosted as [Azure Web Apps][webapp].
 
-If you're not a Ruby developer then keeping your environment up to date with the latest versions of Gems and other dependencies can be time consuming if all you want to do is edit some markdown files and get stuff published.
+In both situations, I want to be able to quickly edit content, build and serve the site locally, and then publish the changes with the minimum of effort. However, Jekyll normally requires you to have set up a Ruby development environment in order to run and build your web site. That's fine if you're already using Ruby for other things, but I'm not, and so I've found myself spending *way* too much time setting up or updating Ruby, and the gems used by my sites.
 
-Also, if you're working on a site that's being edited by many people, you'll want to have a common setup...and you'll want your website built in a reliable, predictable and repeatable manner.
+This is an even bigger problem if you're trying to convince other people to help make edits to sites. The overhead of setting up your machine is just too high.
 
-Recently I hit this issue in my day job, and found a neat way to set up a Jekyll build and deployment pipeline in VSTS.
+However...
 
-## The Requirements
+I use [Docker][docker] for lot of stuff, and so I've discovered a way to avoid the headaches of setting up a Ruby dev environment, and the same approach makes my CI builds much cleaner too.
 
-So, what I want is:
+## Jekyll Images on Docker Hub
 
-1. A way to avoid having to install Ruby, Jekyll and all of the other dependencies on my local machine **or** on any build machines/VMs
-2. Something that will work with VSTS (because my markdown happens to live in a git repo within VSTS)
-3. Something that will trigger a build and deployment each time a change is pushed to the git repo
-4. Deployment to an Azure App Service once the build is complete
-5. Use as little 3rd party stuff as possible (i.e. stuff that comes with VSTS "out of the box")
-
-## Avoid installing Jekyll by using Docker images
-
-In order to avoid having to install Jekyll at all, I've decided to go hunting for a Docker image that would do the job for me. I quickly found this project on GitHub...
+To avoid having to install Jekyll at all, I'm using the following Docker images...
 
 <https://github.com/envygeeks/jekyll-docker>
 
-... where three images are maintained:
+There are three images available:
 
 - `jekyll/jekyll`: Default image.
 - `jekyll/minimal`: Very minimal image.
 - `jekyll/builder`: Includes tools.
 
-The `jekyll/builder` image is exactly what I was looking for so that's the one I've been using.
+I'm using the `jekyll/jekyll` image for local development, and the `jekyll/builder` image for CI builds.
 
-<https://hub.docker.com/r/jekyll/builder/>
+## Building the Jekyll sites locally
 
-I'm suing the `jekyll/builder` image for my CI pipeline, but you can use the other images for local editing of your Jekyll site. I'm assuming you have Docker installed...because...well...you should.
+When I want to build my Jekyll site locally, and test content changes, I use the following commands:
 
-Now that I had this image, all I needed to do was work out how to integrate it into a VSTS build pipeline.
+``` bash
+docker run --rm -it \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -p 4000:4000 jekyll/jekyll:3.7.4 \
+  jekyll serve
+```
+This command will...
 
-## Jekyll Build in VSTS
+- run a container with the `-rm` flag, which removes it once the container exits
+- map the current working directory to the `/srv/jekyll` folder in the container so that Jekyl, within the container, can build the site
+- map the `vendor/bundle` folder within the current directory to the `/usr/local/bundle` folder within the container. This allows the gems to be cached, and reused in subsequent builds
+- map port 4000 in the container to port 4000 on the host
+- use the `jekyll/jekyll:3.7.4` tagged container
+- issue the `jekyll serve` command, so that the site is built and then served on port 4000
+
+After running this, I can then hit `http://localhost:4000` and view the site. Also, as I make changes to the content Jekyll will continue to re-build and serve the changes.
+
+If I simply want to build the site, and generate the `_site` folder with the static content, I can use the following command:
+
+``` bash
+docker run --rm -it \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -p 4000:4000 \
+  jekyll/jekyll:3.7.4 \
+  jekyll serve
+```
+
+This does much the same thing, but doesn't serve the site on a local webserver.
+
+So, now I'm able to build and serve my Jekyll site locally, without having to set up and install a Ruby environment. Yay!
+
+## Jekyll Builds in Travis CI
+
+TODO
+
+## Jekyll Builds in Azure DevOps
 
 TODO
 
@@ -62,9 +91,12 @@ TODO
 
 ## Conclusion
 
-Once I'd figured out the various parameters need in the build steps, what I'm left with is a very simple and easy to understand CI/CD pipeline that will build and deploy my Jekyll site. It's pretty simple, so I can reuse this setup across a number of sites.
+Using these Docker images has allowed me to have a much cleaner machine setup. When I set up a new laptop, I simply install Docker (which I would end up doing for other reasons) and then use Docker to build my Jekyll sites.
 
 [jekyll]: https://jekyllrb.com/
 [martinpeck]: https://github.com/martinpeck/martinpeck.com
 [githubpages]: https://pages.github.com/
-[VSTS]: https://visualstudio.microsoft.com/team-services/
+[devops]: https://azure.microsoft.com/en-gb/services/devops/
+[docker]: https://www.docker.com/
+[travis]:https://travis-ci.org/
+[webapp]:https://azure.microsoft.com/en-gb/services/app-service/web/
