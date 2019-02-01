@@ -30,4 +30,12 @@ Here's what I did...
 
 **SILENCE!** YAY!
 
+## Unfortunate UPDATE
+
+So, it turns out that security updates and upgrades mean that this sound file returns, and this "hack" doesn't last. I'm sure that there are ways you could patch this file automatically but I've found a much more satisfying solution to this problem...
+
+Uninstall Skype for Business!
+
+Luckily, my company has moved pretty much entirely to Microsoft Teams, and Skype has been all but phased out now, so I no longer have to put up with this massively annoying noise!
+
 [uservoice]: https://www.skypefeedback.com/forums/299910--recently-released/suggestions/32559769-login-sound
