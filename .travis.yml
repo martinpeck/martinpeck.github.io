@@ -5,8 +5,6 @@ services:
 
 before_install:
 - docker pull jekyll/jekyll:3.8
-
-script:
 - docker run --rm -it --volume="$PWD:/srv/jekyll" jekyll/jekyll:3.8 jekyll build
 
 # branch whitelist, only for GitHub Pages
