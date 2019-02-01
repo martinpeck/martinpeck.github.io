@@ -11,7 +11,7 @@ The easiest way to build the site locally is to install docker, and then use the
 docker run --rm -it \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
-  -p 4000:4000 jekyll/jekyll:3.7.4 \
+  -p 4000:4000 jekyll/jekyll:3.8 \
   jekyll serve
 ```
 
@@ -21,9 +21,8 @@ If you simply want to build the site then use the following command:
 docker run --rm -it \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
-  -p 4000:4000 \
-  jekyll/jekyll:3.7.4 \
-  jekyll serve
+  jekyll/jekyll:3.8 \
+  jekyll build
 ```
 
 ## Acknowledgements
