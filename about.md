@@ -11,7 +11,7 @@ You can find in these other places:
 
 - [GitHub.com](https://github.com/martinpeck)
 - [Stack Overflow](https://stackoverflow.com/users/74243/martin-peck)
-- [LinkedIn](https://www.linkedin.com/in/martinpeck){:data-proofer-ignore=""}
+- [LinkedIn](https://www.linkedin.com/in/martinpeck)
 - [Twitter](https://twitter.com/martinpeck)
 
 ## Microsoft (again)
