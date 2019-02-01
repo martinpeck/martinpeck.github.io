@@ -48,7 +48,7 @@ When I want to build my Jekyll site locally, and test content changes, I use the
 docker run --rm -it \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
-  -p 4000:4000 jekyll/jekyll:3.7.4 \
+  -p 4000:4000 jekyll/jekyll:3.8 \
   jekyll serve
 ```
 This command will...
@@ -68,9 +68,8 @@ If I simply want to build the site, and generate the `_site` folder with the sta
 docker run --rm -it \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
-  -p 4000:4000 \
-  jekyll/jekyll:3.7.4 \
-  jekyll serve
+  jekyll/jekyll:3.8 \
+  jekyll build
 ```
 
 This does much the same thing, but doesn't serve the site on a local webserver.
