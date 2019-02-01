@@ -80,6 +80,9 @@ So, now I'm able to build and serve my Jekyll site locally, without having to se
 
 TODO
 
+http://loopylab.de/2018/07/15/jekyll-travis-docker-permissions-denied.html
+
+
 ## Jekyll Builds in Azure DevOps
 
 TODO
