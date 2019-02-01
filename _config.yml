@@ -41,3 +41,9 @@ paginate_path: /page:num/
 # Other
 markdown: kramdown
 highlighter: rouge
+
+# Ignore stuff
+exclude:
+  - README.md
+  - LICENSE.md
+  - vendor

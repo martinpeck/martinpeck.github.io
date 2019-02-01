@@ -35,6 +35,7 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+vendor
 
 # Sass Cache Trash
 .sass-cache
