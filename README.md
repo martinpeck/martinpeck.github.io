@@ -7,11 +7,24 @@ This is the source code for the [martinpeck.com](https://martinpeck.com) blog.
 
 The easiest way to build the site locally is to install docker, and then use the following command to run a Jekyll server:
 
-`docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it -p 4000:4000 jekyll/jekyll:3.8 jekyll serve`
+``` bash
+docker run --rm -it \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -p 4000:4000 jekyll/jekyll:3.7.4 \
+  jekyll serve
+```
 
 If you simply want to build the site then use the following command:
 
-`docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:3.8 jekyll build`
+``` bash
+docker run --rm -it \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -p 4000:4000 \
+  jekyll/jekyll:3.7.4 \
+  jekyll serve
+```
 
 ## Acknowledgements
 
@@ -21,4 +34,4 @@ This blog uses a modified version of [Mediumish](https://github.com/wowthemesnet
 
 Open sourced under the [MIT license](LICENSE.md).
 
-Copyright (c) 2016 Martin Peck
+Copyright (c) 2016 - 2019 Martin Peck
