@@ -18,9 +18,16 @@ steps:
     imageName: 'jekyll/builder:latest'
     volumes: |
       $(build.sourcesDirectory):/srv/jekyll
-      $(build.artifactStagingDirectory):/srv/jekyll/_site
+      $(build.binariesDirectory):/srv/jekyll/_site
     containerCommand: 'jekyll build --future'
     detached: false
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)' 
+    includeRootFolder: true 
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip' 
+    replaceExistingArchive: true 
 - task: PublishPipelineArtifact@0
   inputs:
     artifactName: 'drop' 
