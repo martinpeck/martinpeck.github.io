@@ -21,3 +21,10 @@ steps:
       $(build.binariesDirectory):/srv/jekyll/_site
     containerCommand: 'jekyll build --future'
     detached: false
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: $(build.binariesDirectory)
+    contents: '**' 
+    targetFolder: $(build.artifactStagingDirectory)
+    cleanTargetFolder: true
+    
