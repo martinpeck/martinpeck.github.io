@@ -3,8 +3,6 @@ layout: post
 title:  README Driven Development
 author: mpeck
 categories: [ blog ]
-featured: true
-hidden: true
 image: images/readme.png
 excerpt: Write your README first and use it to design your code. This post contains my thoughts about README Driven Development, and how it can help define the features and functionality of a reusable component.
 

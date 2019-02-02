@@ -1,16 +1,20 @@
 ---
 layout: post
-title:  Building and Deploying Jekyll Sites using Docker
+title:  Building and Deploying Jekyll Sites using Docker - Part One
 author: martin
-categories: [ Jekyll, tutorial, blog ]
-image: images/jekyll-vsts/main-image.png
+categories: [ Jekyll, blog, containers ]
+image: images/jekyll-docker/part1.png
 featured: true
+hidden: true
+excerpt: Part 1 of 2, where I describe how I'm using Docker to make local Jekyll site development easier, and avoid having to set up a Ruby development environment.
 
 ---
 
 I'm a big fan of [Jekyll][jekyll] when it comes to static sites, such as blogs, documentation etc.
 
-This post describes how I'm using [Docker][docker] to make local Jekyll site development easier, and to make CI builds of Jekyll sites in [Travis CI][travis] or [Azure DevOps][devops] easier to set up.
+Over two posts, I'm going to describe how I'm using [Docker][docker] to make local Jekyll site development easier, and then how I can use the same technique to make CI builds of Jekyll sites in [Travis CI][travis] or [Azure DevOps][devops] easier to set up.
+
+Part 1 focuses on the local development side of things.
 
 ## The Problem
 
@@ -76,24 +80,11 @@ This does much the same thing, but doesn't serve the site on a local webserver.
 
 So, now I'm able to build and serve my Jekyll site locally, without having to set up and install a Ruby environment. Yay!
 
-## Jekyll Builds in Travis CI
-
-TODO
-
-http://loopylab.de/2018/07/15/jekyll-travis-docker-permissions-denied.html
-
-
-## Jekyll Builds in Azure DevOps
-
-TODO
-
-## Deploying to an App Service
-
-TODO
-
 ## Conclusion
 
-Using these Docker images has allowed me to have a much cleaner machine setup. When I set up a new laptop, I simply install Docker (which I would end up doing for other reasons) and then use Docker to build my Jekyll sites.
+Using these Docker images has allowed me to have a much cleaner local machine setup. When I set up a new laptop I simply install Docker (which I would end up doing for many other reasons) and then use Docker to build my Jekyll sites.
+
+In Part 2 I'll describe how using these Docker images makes the set up and deploy of the site much easier in [Azure DevOps][devops], and how it can also be used for Travis CI builds.
 
 [jekyll]: https://jekyllrb.com/
 [martinpeck]: https://github.com/martinpeck/martinpeck.com
