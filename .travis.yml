@@ -3,7 +3,7 @@ language: python
 services:
   - docker
 
-script: docker run --rm -it --volume="$PWD:/srv/jekyll" jekyll/jekyll:3.8 jekyll build
+script: docker run --rm -it --volume="$PWD:/srv/jekyll" jekyll/jekyll:3.8 /bin/bash -c "chmod a+wx . && jekyll build"
 
 # branch whitelist, only for GitHub Pages
 branches:
