@@ -21,10 +21,8 @@ steps:
       $(build.binariesDirectory):/srv/jekyll/_site
     containerCommand: 'jekyll build --future'
     detached: false
-- task: CopyFiles@2
+- task: PublishPipelineArtifact@0
   inputs:
-    sourceFolder: $(build.binariesDirectory)
-    contents: '**' 
-    targetFolder: $(build.artifactStagingDirectory)
-    cleanTargetFolder: true
+    artifactName: 'drop' 
+    targetPath: $(build.artifactStagingDirectory)
     
