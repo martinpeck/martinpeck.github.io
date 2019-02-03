@@ -3,8 +3,8 @@ layout: post
 title:  "Google Developer Meetup"
 author: mpeck
 categories: [ blog ]
-featured: true
-hidden: true
+featured: false
+hidden: false
 image: images/tensorflow.png
 excerpt: An evening of Tensorflow at the Google Developer Group, Reading, presented by Laurence Moroney. This post is my (short) write-up of this meetup.
 
