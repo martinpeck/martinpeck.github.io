@@ -1,7 +1,7 @@
 # martinpeck.com
 [![Build Status](https://dev.azure.com/martinpeck-github/martinpeck.com/_apis/build/status/martinpeck.martinpeck.com?branchName=gh-pages)](https://dev.azure.com/martinpeck-github/martinpeck.com/_build/latest?definitionId=2&branchName=gh-pages)
 
-This is the source code for the [martinpeck.com](https://martinpeck.com) blog.
+This is the source code for the [martinpeck.com](https://martinpeck.com) blog. If you've spotted a typo in that blog, you're welcome to send me a pull request.
 
 ## Building the Site
 
@@ -15,6 +15,10 @@ docker run --rm -it \
   jekyll serve
 ```
 
+This will generate the `_site` folder and then start a local webserver. Changes to the content are watched, and the site will build.
+
+You can then open the site at <http://localhost:4000>
+
 If you simply want to build the site then use the following command:
 
 ``` bash
@@ -24,6 +28,16 @@ docker run --rm -it \
   jekyll/jekyll:3.8 \
   jekyll build
 ```
+
+This will generate the `_site` folder.
+
+## Azure DevOps Build and Release Pipelines
+
+Commits to this repository will kick off an Azure DevOps build pipeline. You can find that here: <https://dev.azure.com/martinpeck-github/martinpeck.com/_build?>
+
+Successful builds will initiate an Azure DevOps release pipeline. You can find that here: <https://dev.azure.com/martinpeck-github/martinpeck.com/_release>
+
+The release pipeline deploys the static site to an Azure storage account. You can view the deployed site here: <https://martinpeck.z35.web.core.windows.net/>
 
 ## Acknowledgements
 
