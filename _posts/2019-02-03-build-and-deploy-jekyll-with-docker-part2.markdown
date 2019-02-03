@@ -155,12 +155,8 @@ The Travis Build (that I'll be switching off soon):
 
 <https://travis-ci.org/martinpeck/martinpeck.com>
 
-[jekyll]: https://jekyllrb.com/
-[martinpeck]: https://github.com/martinpeck/martinpeck.com
 [devops]: https://azure.microsoft.com/en-gb/services/devops/
 [docker]: https://www.docker.com/
-[travis]:https://travis-ci.org/
-[webapp]:https://azure.microsoft.com/en-gb/services/app-service/web/
 [part1]: {{ site.baseurl }}{% post_url 2019-02-02-build-and-deploy-jekyll-with-docker-part1 %}
 [gettingstarted]: https://docs.microsoft.com/en-us/azure/devops/index
 [createpipeline]: https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-yaml?view=azure-devops
