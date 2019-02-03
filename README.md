@@ -12,7 +12,7 @@ docker run --rm -it \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
   -p 4000:4000 jekyll/jekyll:3.8 \
-  jekyll serve
+  jekyll serve --future --drafts
 ```
 
 This will generate the `_site` folder and then start a local webserver. Changes to the content are watched, and the site will build.
@@ -26,10 +26,15 @@ docker run --rm -it \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
   jekyll/jekyll:3.8 \
-  jekyll build
+  jekyll build --future --drafts
 ```
 
 This will generate the `_site` folder.
+
+For convinience, there is a `Makefile` in this repo that defines the following rules:
+
+- `make build` to build the site
+- `make serve` to build and then serve the site on http://localhost:4000
 
 ## Azure DevOps Build and Release Pipelines
 
