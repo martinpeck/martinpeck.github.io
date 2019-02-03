@@ -6,7 +6,6 @@ description: "A blog, written by someone called Martin Peck"
 meta_description: "A blog, written by someone called Martin Peck."
 logo: 'assets/icons/apple-icon.png'
 google_analytics: 'UA-67509161-1'
-disqus: martinpeck-com
 permalink: pretty
 
 # Authors
