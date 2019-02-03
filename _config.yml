@@ -46,3 +46,6 @@ exclude:
   - README.md
   - LICENSE.md
   - vendor
+  - Gemfile
+  - Gemfile.lock
+  - azure-pipelines.yml
