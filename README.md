@@ -1,5 +1,8 @@
 # martinpeck.com
+
 [![Build Status](https://travis-ci.org/martinpeck/martinpeck.com.svg?branch=gh-pages)](https://travis-ci.org/martinpeck/martinpeck.com)
+
+[![Build Status](https://dev.azure.com/martinpeck-github/martinpeck.com/_apis/build/status/martinpeck.martinpeck.com?branchName=gh-pages)](https://dev.azure.com/martinpeck-github/martinpeck.com/_build/latest?definitionId=2&branchName=gh-pages)
 
 This is the source code for the [martinpeck.com](https://martinpeck.com) blog.
 
