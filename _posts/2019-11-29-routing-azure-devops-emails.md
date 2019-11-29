@@ -37,7 +37,7 @@ The way you do this really depends upon the email client you're using, but if yo
 the web client (i.e. outlook.office365.com) provides a menu item called "View message details" when you click on the "..." three dots menu for a given
 email.
 
-![message details in Outlook web app](../images/azdo-emails/message-headers.png)
+![](/images/azdo-emails/message-headers.png)
 
 In AirMail (on the Mac) it's called "Show raw source" and appears on the application's `View` menue.
 
