@@ -111,7 +111,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
  .listfeaturedtag .thumbnail {
      background-size:cover;
-     height:100%;
+     height:300px;
      display:block;
      background-origin:border-box!important;
      border-top-left-radius: .25rem;

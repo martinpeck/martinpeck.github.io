@@ -7,8 +7,8 @@
                 <div class="h-100">
                     <div class="wrapthumbnail">
                         <a href="{{ post.url | absolute_url }}">
-                            <span class="thumbnail d-block" style="background-image:url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image | absolute_url }}{% endif %});">
-                            </span>
+                            <div class="thumbnail d-block" style="background-image:url({{ post.image | absolute_url }});">                                
+                            </div>
                         </a>
                     </div>
                 </div>
