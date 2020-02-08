@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  Creating Stickers for Apple Messenger
-author: martin
-categories: [ Jekyll, tutorial, blog ]
+title:  Creating iMessage Stickers
+author: mpeck
+categories: [ cartoons, stickers, tutorial ]
 
 ---
+
+*This post has been sitting in my "drafts" folder for over a year. So, rather than trying to finish it (I had hoped to add a bunch of nice illustrations and images) I've decided to publish it "as is".*
 
 I enjoy drawing cartoon characters, and my recent purchase of an iPad Pro with Apple Pencil meant that I spent a good deal of time over the Christmas break drawing.
 
 At the same time, my kids have started using their iPhones and, in particular, the Messages app (iMessage) to send me texts, photos and to play turn-based games.
-
-[INSERT IMAGE]
 
 So, I figured I'd see how easy it is to take some of my drawings, package them up into an iMessage sticker application, and publish it on the iOS App Store.
 
@@ -20,15 +20,11 @@ TL;DR: once you've fought with XCode and got it set up correctly, and once you'r
 
 Within the latest versions of iOS is it possible to apply stickers to your iMessage conversations. These stickers might be used as photos (e.g. they appear with text below them, just like when you share a photo) or they can be stuck onto the conversation, or onto other photos.
 
-[INSERT IMAGE]
-
 iMessage exposes a special area of the AppStore, called the iMessage Store. This allows iOS users to purchase/download iMessage Sticker packs.
 
-[INSERT IMAGE]
+An iMessage Sticker Pack has one or more images in it. These images can one of three standard sizes, described in Apples HIG documentation, and can either be static or dynamic. Generally, stickers have a transparent background to allow them to be stuck over other content.
 
-An iMessage Sticker Pack has one or more images in it. These images can one of three standard sizes, described in [Apples HIG documentation](http://), and can either be static or dynamic. Generally, stickers have a transparent background to allow them to be stuck over other content.
-
-Within XCode 10 there is an option to create an iMessage Sticker Application. This will create a new project that contains all you need to create a sticker pack. These projects are code-less. They simply contain the metadata and resources that can be compiled into an archive that can be uploaded to the AppStore.
+Within XCode there is an option to create an iMessage Sticker Application. This will create a new project that contains all you need to create a sticker pack. These projects are code-less. They simply contain the metadata and resources that can be compiled into an archive that can be uploaded to the AppStore.
 
 The steps to creating an iMessage Sticker pack, and getting it published are as follows:
 
@@ -60,8 +56,6 @@ Before you get started, I recommend you get the latest version of XCode installe
 
 Upon opening XCode you are given the choice of opening an existing project or creating a new one. Create a new one, and then select Sticker Pack Application as the type of project.
 
-[INSERT IMAGE]
-
 **I then got tripped up by picking the wrong values in the next stage. In fact, it caused me hours of research, dead ends and a support call.**
 
 You have to pick a Team when creating your new project. If you've already signed in to XCode, and if you've signed up as an Apple Developer, you'll probably have two entries in this list...
@@ -69,7 +63,7 @@ You have to pick a Team when creating your new project. If you've already signed
 * One of them is your Apple Developer team
 * The other is a "free" developer account
 
-You need to pick the Apple Developer team if you want any chance of publishing your stickers. If you pick the other one you'll end up with the App Bundle ID (the unique ID that identifies your application) being unavailable when publishing.
+You need to pick **Apple Developer team** if you want any chance of publishing your stickers. If you pick the other one you'll end up with the App Bundle ID (the unique ID that identifies your application) being unavailable when publishing.
 
 Now, for me, that list includes the following items...
 
@@ -78,7 +72,7 @@ Now, for me, that list includes the following items...
 
 ... and I couldn't find *anything* online to tell me which of these was which. I picked the wrong one, and then had all sorts of problems with my sticker app later.
 
-I also asked Apple Support, who also told be the *wrong one*.
+I also asked Apple Support, who also told be the *wrong one*!
 
 The one with the (Personal Team) suffix is the free one, so (for me) I need to pick the `Martin Peck` team and NOT the `Martin Peck (Personal Team)` one.
 
@@ -118,8 +112,6 @@ Once you've saved this, you're read to upload your app.
 ## Step 8 : Archive and Upload your app to iTunes Connect
 
 Within XCode, you need to Archive your project build.
-
-[INSERT IMAGE]
 
 Once you've created an archive, you can then upload it to the App Store. A number of checks will be made at this point (e.g. you need to have all of those app icons in place). The upload process will also check that the Bundle ID of the app you're uploading matches the Bundle ID you defined in iTunes Connect.
 
