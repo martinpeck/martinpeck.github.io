@@ -57,7 +57,7 @@ I've spent the day setting my Raspberry Pi 400 up, and I'm pretty impressed. My 
 
 - Set up Chromium, and installed the [1Password extension](https://1password.com/)
 - Installed [Visual Studio Code](https://code.visualstudio.com/) using [these instructions](https://pimylifeup.com/raspberry-pi-visual-studio-code/)
-- Installed Dtrue [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) so that I can use Docker dev containers to develop code within
+- Installed the [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) so that I can use Docker dev containers to develop code within
 
 On the whole, this setup was easy. So easy it was almost boring! I had a couple of issues, but on the whole it was very easy to set my Raspberry Pi 400 up so that I can write code, use Docker, and push changes to GitHub. For example, I'm currently writing this blog post within VS Code, building it using [Jekyll](https://jekyllrb.com/) within a Docker container.
 
