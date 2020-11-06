@@ -67,7 +67,7 @@ Having installed tools, and played around, I've built some very basic Rust code 
 
 ## Conclusion
 
-I own several Raspberry Pi computers (1, 2 and 3). Most of them are the Model B format, but I have couple of Zeros too. All of them sit in a box, unused. I've played with them, then put them away. Part of that is because the performance hasn't been that great, but the form factor is a major factor. It feels like the Raspberry Pi 400 has the power I need (for casual projects), and comes in a form facto that I can happily leave plugged in on my desk.
+I own several Raspberry Pi computers (1, 2 and 3). Most of them are the Model B format, but I have couple of Zeros too. All of them sit in a box, unused. I've played with them, then put them away. Part of that is because the performance hasn't been that great, but the form factor is a major factor. It feels like the Raspberry Pi 400 has the power I need (for casual projects), and comes in a form factor that I can happily leave plugged in on my desk.
 
 On top of that...it gives me a massive nostalgia rush using it!
 
