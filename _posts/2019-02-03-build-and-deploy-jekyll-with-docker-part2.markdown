@@ -4,8 +4,7 @@ title:  Building and Deploying Jekyll Sites using Docker - Part Two
 author: mpeck
 categories: [ Jekyll, blog, containers ]
 image: images/jekyll-docker/part2.png
-featured: true
-hidden: true
+featured: false
 
 excerpt: Part 2 of 2, where I show how I'm using Docker images within my CI pipeline to build static websites with Jekyll
 

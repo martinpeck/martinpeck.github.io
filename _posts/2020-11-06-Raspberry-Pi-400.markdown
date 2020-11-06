@@ -1,0 +1,74 @@
+---
+layout: post
+title:  Raspberry Pi 400 - First Impressions
+author: mpeck
+categories: [ blog ]
+image: images/rpi400/rpi400.jpg
+featured: true
+hidden: true
+excerpt: These are my first impressions of the new Raspberry Pi 400, and my experiences of setting it up as a machine for development and blogging.
+---
+
+I grew up programming on my TV, with a Sinclair ZX81 followed by a ZX Spectum. Computers build into keyboards, that you can easily plug into a TV, are part of my DNA. So, given this, how could I resist buying the new [Raspberry Pi 400](https://www.raspberrypi.org/products/raspberry-pi-400/)!?
+
+The following are my initial thoughts on the hardware, and on using it for light weight development. 
+
+TL;DR: I like it :)
+
+## Tech Specs
+
+The Raspberry Pi 400 is, essentially, a Raspberry Pi 4 housed within a keyboard. You can read much better descriptions elseewhere, but the main points from the tech specs are:
+
+- Broadcom BCM2711 quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.8GHz
+- 4GB LPDDR4-3200
+- Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN
+- Bluetooth 5.0, BLE
+- Gigabit Ethernet
+- 2 × USB 3.0 
+- 1 × USB 2.0 ports
+- Horizontal 40-pin GPIO header
+- 2 × micro HDMI ports (supports up to 4Kp60)
+- MicroSD card slot for operating system and data storage
+- 79-key compact keyboard
+
+(full specs can be found [here](https://www.raspberrypi.org/products/raspberry-pi-400/specifications/))
+
+The 400 comes with a 16GB SD card pre-installed with Raspbian, and a host of apps (LibreOffice), dev tools (Geany, Mathematica, Scratch), utilities (Chromium, VLC Media Player), and games (Minecraft).
+
+## First Impressions on the Hardware
+
+It was *very* easy to plug the 400 in and get it up and running. It's a neat device, with a good collection of ports and connectors at the back. The keyboard is...ok. The device is £67 in the UK. I bought the kit (which includes a mouse, power supply, HDMI cable, and official guide) for £94. Given the price point the keyboard is absolutely fine, but it does feel a tiny bit "plasticy".
+
+The 400 doesn't have an audio-out. Audio is delivered via the HDMI output. For me, that's a problem because my monitor doesn't have speakers. It's not a BIG problem, but it's something I hadn't considered.
+
+The other thing the 400 doesn't have is the connector for the Raspberry Pi camera module. Again, this isn't a big deal for me but if you were expecting to build any camera projects then the 400 isn't the right choice.
+
+The 400has the GPIO header at the back, so with a ribbon cable you can build electronics projects very easily. I have an [Adafruit T-Cobbler Plus](https://www.adafruit.com/product/2028) which makes it very easy to connect the 400 to a breadboard and build...stuff!
+
+![GPIO](/images/rpi400/gpio.jpg)
+
+The 400 starts up quickly, and is very capable as a general purpose desktop device. I've spent most of today browsing the web on it, while also installing apps, running docker containers, and building code, and it's felt fast/snappy pretty much most of the time.
+
+Overall, the hardware is pretty good and I love the form factor. I can see schools/code clubs purchasing these devices and using the in their computing labs.
+
+## Developer Experience
+
+I've spent the day setting my Raspberry Pi 400 up, and I'm pretty impressed. My setup has included:
+
+- Set up Chromium, and installed the [1Password extension](https://1password.com/)
+- Installed [Visual Studio Code](https://code.visualstudio.com/) using [these instructions](https://pimylifeup.com/raspberry-pi-visual-studio-code/)
+- Installed Dtrue [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) so that I can use Docker dev containers to develop code within
+
+On the whole, this setup was easy. So easy it was almost boring! I had a couple of issues, but on the whole it was very easy to set my Raspberry Pi 400 up so that I can write code, use Docker, and push changes to GitHub. For example, I'm currently writing this blog post within VS Code, building it using [Jekyll](https://jekyllrb.com/) within a Docker container.
+
+The only issue that I hit is the ARM support for various Docker images. The default Ruby dev container image wouldn't build because it had some dependencies that didn't have ARM variants. In the end I took the Ruby 2.7 docker image as a base, and copy/pasted into my own `Dockerfile` the parts of the defintion I needed (removing Node, zhs and a few other things). I'm not sure exactly what it was that was failng to build, so I need to go back and work it out, but it's worth remembering that if the Rasberry Pi is ARM based, and not all development tools have ARM builds.
+
+Having installed tools, and played around, I've built some very basic Rust code (with build times comparible to my MacBook!), I've written some [GPIOZero](https://gpiozero.readthedocs.io/en/stable/) based Python 3 code (controlling butons and LEDs), and I've set up a Jekyll/Ruby dev container and built/updated my blog.
+
+## Conclusion
+
+I own several Raspberry Pi computers (1, 2 and 3). Most of them are the Model B format, but I have couple of Zeros too. All of them sit in a box, unused. I've played with them, then put them away. Part of that is because the performance hasn't been that great, but the form factor is a major factor. It feels like the Raspberry Pi 400 has the power I need (for casual projects), and comes in a form facto that I can happily leave plugged in on my desk.
+
+On top of that...it gives me a massive nostalgia rush using it!
+
+![GPIO](/images/rpi400/desktop.jpg)
