@@ -1,7 +1,5 @@
 # martinpeck.com
 
-[![Build Status](https://dev.azure.com/martinpeck-github/martinpeck.com/_apis/build/status/martinpeck.martinpeck.com?branchName=gh-pages)](https://dev.azure.com/martinpeck-github/martinpeck.com/_build/latest?definitionId=2&branchName=gh-pages)
-
 This is the source code for the [martinpeck.com](https://martinpeck.com) blog. If you've spotted a typo in that blog, you're welcome to send me a pull request.
 
 ## Building the Site
@@ -53,4 +51,4 @@ This blog uses a modified version of [Mediumish](https://github.com/wowthemesnet
 
 Open sourced under the [MIT license](LICENSE.md).
 
-Copyright (c) 2016 - 2019 Martin Peck
+Copyright (c) 2016 - 2020 Martin Peck
