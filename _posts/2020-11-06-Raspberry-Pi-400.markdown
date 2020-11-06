@@ -72,3 +72,11 @@ I own several Raspberry Pi computers (1, 2 and 3). Most of them are the Model B 
 On top of that...it gives me a massive nostalgia rush using it!
 
 ![GPIO](/images/rpi400/desktop.jpg)
+
+In the picture below I have two instances of VS Code (both running dev containers), plus I'm browsing. It takes it all in its stride. 
+
+![GPIO](/images/rpi400/pi-400-desktop.png)
+
+I've not tried building anything huge...but that's not what it's for. It's for having fun...
+
+...and I'm **absolutely having fun**!
