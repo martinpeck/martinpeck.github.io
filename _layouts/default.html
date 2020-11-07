@@ -21,6 +21,16 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+<meta property="og:title" content="{{ page.title }}"/>
+{% if page.excerpt %}<meta property="og:description" content="{{ post.excerpt}}" />{% endif %}
+<meta property="og:url" content="https://martinpeck.com" />
+<meta property="og:site_name" content="MartinPeck.com"/>
+{% if page.image %}
+<meta property="og:image" content="https://martinpeck.com{{ site.baseurl }}/{{ page.image }}" />
+<meta property="og:image:secure_url" content="https://martinpeck.com{{ site.baseurl }}/{{ page.image }}" />
+{% endif %}
+
 <link rel="shortcut icon" href="/assets/icons/favicon.ico">
 
 <title>{{ page.title }} | {{site.name}}</title>
