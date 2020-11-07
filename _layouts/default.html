@@ -23,13 +23,11 @@
 <meta name="theme-color" content="#ffffff">
 
 <meta property="og:title" content="{{ page.title }}"/>
-{% if page.excerpt %}<meta property="og:description" content="{{ post.excerpt}}" />{% endif %}
-<meta property="og:url" content="https://martinpeck.com" />
+{% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt}}" />{% endif %}
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:site_name" content="MartinPeck.com"/>
-{% if page.image %}
-<meta property="og:image" content="https://martinpeck.com{{ site.baseurl }}/{{ page.image }}" />
-<meta property="og:image:secure_url" content="https://martinpeck.com{{ site.baseurl }}/{{ page.image }}" />
-{% endif %}
+{% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url}}" />{% endif %}
+<meta property="og:locale" content="en_GB" />
 
 <link rel="shortcut icon" href="/assets/icons/favicon.ico">
 
