@@ -14,9 +14,13 @@ You can find in these other places:
 - [LinkedIn](https://www.linkedin.com/in/martinpeck)
 - [Twitter](https://twitter.com/martinpeck)
 
+I also draw and publish cartoons. Some of my creations can be found on sale at [Redbubble][redbubble] and [Zazzle][zazzle].
+
+![My Products](/images/aboutme/products.png)
+
 ## Microsoft (again)
 
-I've returned to Microsoft, and I'm currently a Software Engineering Manager at Microsoft, within the Commercial Software Engineering (CSE) team. I manage a small team of Software Engineers, and focus on "compute" things, such as serverless, containers, and Kubenetes. I get to contribute to OSS software, and I don't have a Windows machine. I <3 the new Microsoft!
+I've returned to Microsoft, and I'm currently a Software Engineering Manager at Microsoft, within the Commercial Software Engineering (CSE) team. I manage a team of Software Engineers who work on software projects that have real scale, and high importance, to many of Microsoft's biggest customers. I also get to contribute to OSS software, write code in lots of languages (Python, Golang, and sometimes...C#), and I don't have to use a Windows machine. I <3 the new Microsoft!
 
 ## Code Club
 I was previously the Director of Engineering for a fantastic not-for-profit called [Code Club][codeclub] . Code Club's mission is to help kids learn about writing code and to get them excited about technology in general. Volunteers help run after school clubs across the UK. I happen to be one of those volunteers, running a club in a local school.
@@ -49,7 +53,6 @@ This blog is using a modified version of [Mediumish][mediumish], which is an exc
 [blinkbox]: http://blinkbox.com
 [jekyll]: http://jekyllrb.com
 [mediumish]: https://github.com/wowthemesnet/mediumish-theme-jekyll
-
-
-
+[redbubble]: https://martinpeck.redbubble.com
+[zazzle]: https://www.zazzle.co.uk/store/martinpeck
 
