@@ -19,21 +19,19 @@ This means that as soon as any other policies are marked as complete, the change
 
 Once all of the PR requirements are met, Azure DevOps will then automatically merge the changes and close the PR.
 
-This is really useful in speeding things up, and prevents PRS that are approved, and ready to merge, from sitting there blocking other work. So, a really useful feature.
+This is really useful in speeding things up, and prevents PRs that are approved, and ready to merge, from sitting there blocking other work. 
 
-Personally, as an author of PRs I generally set auto-complete in the following situations:
+When I'm the author of a PR I generally set auto-complete in the following situations:
 
-1. My Pull Request is "trivial" (e.g. a doc update)
-2. My Pull Request is in an area of the code that isn't going to impact anyone else (i.e. the risk of something getting auto-merged is very low)
+1. My Pull Request is "trivial" (e.g. a doc update, or very small code changes that are easy to review)
+2. My Pull Request is in an area of the code that isn't going to impact anyone else (i.e. the risk and impact of something going wrong with the auto-merge is very low)
 3. I've had some initial comments, and maybe had 1 approval already, so I have a high confidence that the PR looks good
 
-In other words, I tend to use it only when the risk of something going wrong is very low, either because of the nature of the PR or because I've already had feedback from others that it looks good.
+In other words, I tend to use it only when the risk of something going wrong is very low, either because of the nature of the PR or because I've already had feedback from others that it looks good, and I don't see auto-complete as my default.
 
-The other time I tend to use auto-complete is when I'm the main person reviewing the PR. I'll review the code, makes some comments, approve the PR "with suggestions" and then switch the PR to auto-complete. 
-I see this as a strong signal to the PR author that their code looks good, and assuming they address my comments it's good to go.
+The other time I tend to use auto-complete is when I'm the main person reviewing the PRs in a repo. I'll review other people's PRs, makes some comments, approve the PR with suggestions, and then switch the PR to auto-complete. I see this as a strong signal to the PR author that their code looks good, and assuming they address my comments it's good to go.
 
-HOWEVER, too often I see PR authors set autocomplete as a way to "fire and forget" their PR, often for complex pull requests, or for PRs where feedback on the code, or the approach, are likely.
-Developers should never just throw their PRs "over the wall" and hope they get merged. It's important to see your PRs through the entire process, and this is especially true of large/complex PRs.
+HOWEVER, too often I see PR authors set autocomplete as a way to "fire and forget" their PR, often for complex pull requests, or for PRs where feedback on the code, or the approach, are likely. Developers should never just throw their PRs "over the wall" and hope they get merged. It's important to see your PRs through the entire process, and this is especially true of large/complex PRs.
 
 So. my guidance on using auto-complete is therefore:
 
