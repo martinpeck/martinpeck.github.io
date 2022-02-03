@@ -1,24 +1,14 @@
-# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.145.1/containers/ruby/.devcontainer/base.Dockerfile
+# [Choice] Debian OS version (use bullseye on local arm64/Apple Silicon): bullseye, buster
+ARG VARIANT=bullseye
+FROM mcr.microsoft.com/vscode/devcontainers/jekyll:0-${VARIANT}
 
-# [Choice] Ruby version: 2, 2.7, 2.6, 2.5
-FROM ruby:2.7
+# [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
+ARG NODE_VERSION="none"
+RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
-# [Option] Install zsh
-ARG INSTALL_ZSH="false"
-# [Option] Upgrade OS packages to their latest versions
-ARG UPGRADE_PACKAGES="true"
+# [Optional] Uncomment this section to install additional OS packages.
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-# Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies.
-ARG USERNAME=vscode
-ARG USER_UID=1000
-ARG USER_GID=$USER_UID
-COPY library-scripts/common-debian.sh library-scripts/ruby-debian.sh /tmp/library-scripts/
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    # Remove imagemagick due to https://security-tracker.debian.org/tracker/CVE-2019-10131
-    && apt-get purge -y imagemagick imagemagick-6-common \
-    # Install common packages, non-root user, rvm, core build tools
-    && bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" \
-    && bash /tmp/library-scripts/ruby-debian.sh "none" "${USERNAME}" "true" "true" \
-    && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
-
-
+# [Optional] Uncomment this line to install global node packages.
+# RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
