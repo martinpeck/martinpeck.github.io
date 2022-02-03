@@ -4,7 +4,7 @@ title:  Let's Rewrite Everything!
 author: mpeck
 categories: [ blog ]
 featured: true
-hidden: false
+hidden: true
 image: images/rewrite.jpg
 excerpt: How to react when someone suggests rewriting everything. How to convince someone it's a good idea.
 ---
