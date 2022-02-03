@@ -44,7 +44,7 @@ You may have a techology or framework at the heart of your project that is about
 
 I'm sure there are plenty of other good reasons for rewrites, but in all cases it make sense to keep in mind the **Cost** of a rewrite. 
 
-- What else would you, and your team, be doing if they weren't rewriting things? What new features are your *not* delivering? 
+- What else would you, and your team, be doing if they weren't rewriting things? What new features are you *not* delivering? 
 - How much does this change actually cost? In a large company, you might forget about the financial costs, but they're there. In smaller companies your rewrite will have a significant impact on ROI.
 
 ## How to Discuss your Rewrite
