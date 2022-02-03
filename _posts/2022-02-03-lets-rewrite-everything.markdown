@@ -80,7 +80,7 @@ Bring a plan to these discussions.
 - Is there a new feature, or a part of the system, that you can try this out on?
 - Have you worked out the step-by-step plan for the rewrite?
 
-Even if your plan has holes, having *something* that illustrates the what you'd approach the rewrite makes it easier for others to see the way forward.
+Even if your plan has holes, having *something* that illustrates the way you'd approach the rewrite makes it easier for others to see that path forward.
 
 ## Present the Down Side
 
