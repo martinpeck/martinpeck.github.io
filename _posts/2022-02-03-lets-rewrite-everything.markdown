@@ -116,11 +116,14 @@ A rewrite shouldn't get an easy pass. If it does then, potentially, no one under
 
 # Finally...
 
-Good luck with your rewrite! I'm sure it'll be everything you hope it'll be. It'll probably be finished *way* quicker than you expect, and life will be perfect afterwards. 
+Good luck with your rewrite! I'm sure it'll be everything you hope it'll be. It'll probably be finished *way* quicker than you expect, and life will be perfect afterwards.*
 
 Have fun!
 
+<hr>
+[* _That final "Good Luck" paragraph should be read as "regular British sarcasm"_ ]
 
+![Sarcasm-O-Meter](/images/sarcasm.png)
 
 
 
