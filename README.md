@@ -1,6 +1,6 @@
 # martinpeck.com
 
-![Build Site with Jekyll](https://github.com/martinpeck/martinpeck.com/workflows/Build%20Site%20with%20Jekyll/badge.svg?branch=gh-pages)
+[![Build Jekyll Site](https://github.com/martinpeck/martinpeck.com/actions/workflows/jekyll.yml/badge.svg)](https://github.com/martinpeck/martinpeck.com/actions/workflows/jekyll.yml)
 
 This is the source code for the [martinpeck.com](https://martinpeck.com) blog. If you've spotted a typo in that blog, you're welcome to send me a pull request.
 
