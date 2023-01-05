@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
+    - name: Build the site in the container
       run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        mcr.microsoft.com/vscode/devcontainers/ruby:2.7-bullseye /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+        docker run -v $(pwd):/workspace \
+        mcr.microsoft.com/vscode/devcontainers/ruby:2.7-bullseye \
+        /bin/bash -c "cd workspace && make ci-build"
