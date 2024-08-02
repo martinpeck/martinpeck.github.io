@@ -12,9 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the container
-      run: |
-        docker run -v $(pwd):/workspace \
-        mcr.microsoft.com/vscode/devcontainers/ruby:2.7-bullseye \
-        /bin/bash -c "cd workspace && make ci-build"
+    - name: Checkout (GitHub)
+      uses: actions/checkout@v3
+
+    - name: Run make ci-build in dev container
+      uses: devcontainers/ci@v0.3
+      with:    
+        push: never
+        runCmd: make ci-build
